@@ -95,9 +95,13 @@ module.exports = {
     output: {
         filename: `./js/${filename('js')}`,
         path: path.resolve(__dirname, 'app'),
+        libraryTarget: 'module',
         clean: true,
         publicPath: '',
     },
+    experiments: {
+        outputModule: true
+      },
     devServer: {
         historyApiFallback: true,
         open: true,
