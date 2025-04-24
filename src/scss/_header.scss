@@ -1,0 +1,70 @@
+// Переменные
+$border-color: #D9FFF5;
+$background-color: #FFF;
+$item-background-color: #EAEAEA;
+
+// SCSS
+.header {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid $border-color;
+  background: $background-color;
+
+  &__container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  &__navigation {
+    .header__navigation-list {
+      display: flex;
+      align-items: center;
+      gap: 17px;
+
+      .header__navigation-item:nth-child(4) /*, .content*/ {
+        height: 32px;
+        width: 2px;
+        border-radius: 1px;
+        background-color: $item-background-color;
+      }
+
+      .header__navigation-item:nth-child(1),
+      .header__navigation-item:nth-child(2),
+      .header__navigation-item:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 700px) {
+  .header {
+    .header__container {
+            gap: 20px;
+            .header__contetnt{
+                width: 2px;
+                height: 32px;
+                background-color:$item-background-color;
+            }
+        }
+    &__navigation {
+      .header__navigation-list {
+        .header__navigation-item:nth-child(1),
+        .header__navigation-item:nth-child(2),
+        .header__navigation-item:nth-child(3) {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1300px) {
+    .header {
+        display: none;
+    }
+}

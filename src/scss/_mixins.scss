@@ -1,0 +1,23 @@
+// @import "./mixins/breakpoint";
+// @import "./mixins/stop-scroll";
+// @import "./mixins/visually-hidden";
+// @import "./mixins/burger";
+// @import "./mixins/font-face";
+
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin btn{
+    width: 40px;
+    height: 40px;
+    @include flex-center;
+    border-radius:50%;
+    // background-color: $rose-btn;
+}
+
+
+
+

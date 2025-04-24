@@ -1,0 +1,39 @@
+/* @media(min-width:700px){
+.brand-slider__wrapper{
+  width: 96.5%;
+  padding: 26px 24px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+.brand__slide {
+  width: 29.5%;  
+}
+  .brand__slide img{
+    max-height: 40px;
+}
+
+}
+.brand__slide--back{
+
+background-color: none;
+}
+}
+
+
+@media (min-width: 1001px) {
+.brand__swiper{
+  width: 98%;
+
+.brand__slide {
+  width: 22.5%;  
+} */
+
+
+
+// .brand__swiper:nth-last-child(1) {
+//   content: none;
+//   flex: 0;
+// }
+}
+}

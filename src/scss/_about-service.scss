@@ -1,0 +1,95 @@
+.about-service{
+    padding: 21px 0 24px;
+    border-bottom: 1px solid $border-color;
+    &__content{
+        padding: 0 16px;
+        width: 100%;
+        .about-service__text{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            letter-spacing: 0.2px;
+            color: $font-color;
+            &:nth-child(1), 
+            &:nth-child(2) {
+                margin-bottom: 16px;
+            }
+
+            &:nth-child(2), &:nth-child(4) {
+                display: none;
+            }
+        }
+        .about-service__btn-open{
+            margin-bottom: 16px;
+            display: flex;
+            gap: 8px;
+            color: $font-color;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: -0.2px;
+            text-wrap:nowrap;
+        }
+       
+    }
+    &__img{
+        width: 100%;
+        
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .about-service{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+        &__content{
+            width: 46.7%;
+            display: flex;
+            flex-direction: column;
+            padding: 0 23px;
+            .about-service__text:nth-child(2){
+                display: block;
+                .about-service__text{
+                    display: none;
+                }
+            }
+            
+        }
+        &__img{
+            width: 59%;
+            padding-right: 25px;
+            border-radius: 10%;
+            img{
+                border-radius: 3%;
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+@media (min-width: 1300px) {
+
+
+    .about-service {
+        padding: 0 32px;
+        &__content{
+            width: 50%;
+            .about-service__text:nth-child(2){
+                .about-service__text{
+                    display: inline;
+                }
+            }
+            .about-service__btn{
+                padding-top: 14px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,18 @@
+footer{
+ display: flex;
+ justify-content: center;  
+ flex-direction: column;
+ gap: 16px;
+ padding: 16px 0;
+ border-top: 1px solid #D9FFF5;
+
+ p{
+    color: rgb(126, 126, 130);
+font-family: TT Lakes;
+font-size: 14px;
+font-weight: 500;
+line-height: 16px;
+letter-spacing: 0px;
+text-align: center;
+ } 
+}

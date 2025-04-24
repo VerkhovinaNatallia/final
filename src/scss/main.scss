@@ -1,0 +1,85 @@
+// @import '../fonts/TTLakes/stylesheet.css';
+@import '_mixins.scss';
+@import '_reset.scss';
+@import '_var.scss';
+
+@import '_menu.scss';
+@import '_header.scss';
+@import'./title';
+@import './slider';
+@import'./_about-service.scss';
+@import './brand-slider';
+@import './repair-types';
+@import './service-pricing';
+@import './modal-message.scss';
+@import './modal-call.scss';
+
+@import'_vendor.scss';
+@import "../fonts/stylesheet.css";
+
+
+// @import './brand.scss';
+// @import './technique';
+@import './footer';
+// @import './price';
+
+
+
+* {
+  font-family: TT Lakes;
+  color: $font-color;
+}
+.overlay{
+  width: 100wh;
+}
+a {
+  cursor: pointer;
+}
+.modal-message,.modal-call{
+  display: none;
+}
+.site-container{
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #FFF;
+}
+.container-1440{
+  background-color: $background-color2;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.6px;
+  color: $font-color;
+}
+h2{
+  color: rgb(126, 126, 130);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-align: left;
+  text-transform: uppercase;
+  padding: 16px;
+  background: linear-gradient(270.00deg, rgb(255, 255, 255),rgb(248, 248, 248) 98.614%);
+}
+
+@media(min-width:1300px) {
+  .site-container{
+    position: relative;
+    display: flex;
+      .container-1440{
+        background-color: $background-color2;
+      }
+  }
+}

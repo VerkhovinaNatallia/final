@@ -1,0 +1,91 @@
+.repair-types{
+    padding-top: 20px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid $border-color;
+
+    &__container {
+        width: 100%;
+        overflow: hidden;
+        .repair-types__slider{
+            .repair-types__wrapper{
+                .repair-types__slide{
+                    font-size: 20px;
+                    width: 100%;
+                    padding: 16px;
+                        div{
+                            display: flex;
+                            align-items:start;
+                            justify-content: space-between;
+                            background: $background-color;
+                            border: 1px solid $item-background-color;
+                            height: 160px;
+                            padding: 16px;
+                            border-radius: 6px;
+                            width: 100%;
+                            .repair-types__btn{
+                                align-self: end;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 50%;
+                                box-sizing: border-box;
+                                border: 2px solid $highlight-color;
+                                height: 40px;
+                                width: 40px;
+                            }
+                        }
+                    
+                }
+    
+            }
+        }
+        
+    }
+    &__pagination{
+        text-align: center;
+        position: static;
+        top: 30px;
+        z-index: 10;
+    }
+}
+
+@media(min-width:700px){
+    .repair-types{
+        &__container{
+            .repair-types__slider{
+                .repair-types__wrapper{
+                    display: flex;
+                    flex-wrap: wrap;
+                    .repair-types__slide{
+                        width: 33.3%;
+                        .repair-types__text{
+                            font-size: 15px;
+                        }
+                    }
+                }
+            }
+            .repair-types__controls{
+                padding: 0 24px;
+                .repair-types__btn--open{
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+        }
+    } 
+}
+@media(min-width:1300px){
+    .repair-types{
+        &__container{
+            .repair-types__slider{
+                .repair-types__wrapper{
+                    .repair-types__slide{
+                        width: 25%;
+                    }
+                }
+            }
+            
+        }
+    }
+}
